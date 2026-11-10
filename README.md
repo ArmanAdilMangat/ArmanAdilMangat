@@ -1,9 +1,9 @@
 <h1 align="center">Hi, I'm Arman Adil Mangat 👋</h1>
 <h3 align="center">AI / ML Engineer · Embedded AI · NLP · LLMs</h3>
-<p align="center">Final-year BS Artificial Intelligence @ UMT Lahore 🇵🇰 · Building offline LLM systems, fine-tuning transformers, and shipping AI to the edge.</p>
+<p align="center">BS Artificial Intelligence graduate, UMT Lahore (2026) 🇵🇰 · Building offline LLM systems, fine-tuning transformers, and shipping AI to the edge.</p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/arman-adil-mangat-82221a253/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/armanadilmangat/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://huggingface.co/ArmanXAI"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/></a>
   <a href="mailto:aadilmangat@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://github.com/ArmanAdilMangat"><img src="https://img.shields.io/github/followers/ArmanAdilMangat?label=Follow&style=for-the-badge&logo=github&color=181717"/></a>
@@ -14,9 +14,9 @@
 
 ### 🚀 About Me
 
-- 🎓 **Final-year BS Artificial Intelligence** at the **University of Management and Technology (UMT), Lahore**
+- 🎓 **BS Artificial Intelligence (2022–2026)**, **University of Management and Technology (UMT), Lahore**
 - 🤖 Hybrid specialization: **NLP · Deep Learning · Embedded AI** — full stack, from fine-tuning BERT to wiring I2S microphones on ESP32-S3
-- 🧞 Currently leading **[GENIE](https://github.com/ArmanAdilMangat/GENIE)** — a fully offline voice AI assistant (Whisper + Mistral 7B + ESP32-S3) for accessibility & smart-environment IoT control
+- 🧞 Led **[GENIE](https://github.com/ArmanAdilMangat/GENIE)** — an offline voice assistant and home-safety monitor on six ESP32-S3 nodes, built for accessibility & smart-environment IoT control
 - 🏆 Completed the **Advanced AI/ML Engineering Internship** at **DevelopersHub Corporation** — fine-tuned models hitting up to **99.82% accuracy**
 - 📄 Authored an independent research paper: **CNN-LSTM intrusion detection for IoT** (99.03% accuracy, CICIDS-2017)
 - 🎯 **Open to remote AI/ML roles** across **Europe, Australia & New Zealand**
@@ -26,20 +26,18 @@
 
 ### 🌟 Featured Project — GENIE
 
-> *"Capabilities once reserved for $50B cloud platforms, running on a $15 board and a laptop."*
+🧞 **[GENIE — Offline Voice Assistant & Home-Safety Monitor](https://github.com/ArmanAdilMangat/GENIE)** &nbsp; `Final Year Project · Team Lead · v2.0.0`
 
-🧞 **[GENIE — Offline Voice AI Assistant](https://github.com/ArmanAdilMangat/GENIE)** &nbsp; `Final Year Project · Team Lead`
+Six ESP32-S3 nodes and one laptop. Wake word, speech recognition, intent routing and speech synthesis all run locally — no audio, transcript or telemetry leaves the network.
 
-A fully offline voice assistant on **ESP32-S3** — no cloud, no API keys, all on-prem.
+- 🎙️ **Voice path:** custom "Hey Genie" wake word (openWakeWord/ONNX) → Faster-Whisper on two mics → 362-pattern AIML router with Mistral-7B (Ollama) fallback → Piper TTS · 8–15 s end-to-end
+- 🚨 **Safety path:** gas, flame, fall and vibration confirmed on the microcontroller, never routed through the LLM · 50–150 ms for flame/fall
+- 🧠 **On-device ML:** 232-parameter MLP in pure MicroPython on the face board — 72.6% on a held-out recording session
+- 🖥️ **Firmware:** hand-written 8080 parallel display driver (118 fps eye engine), 14-byte ESP-NOW link between sensor nodes
+- 📦 **Enclosure:** 177.8 mm laser-cut acrylic cube, generated and audited by Python before every cut
+- ✅ **CI** runs hardware-free checks on every push · honest "what does not work" section in the README
 
-- 🎤 **Hardware:** Dual INMP441 I2S mics · MAX98357A class-D amp · 3W speaker · 8MB PSRAM
-- 🧠 **AI Stack:** OpenAI Whisper (STT) → Mistral 7B via Ollama (LLM) → pyttsx3 (TTS)
-- ⚡ **Latency:** 8–15s end-to-end · **Cost:** ~$22 hardware · **Privacy:** 100% local
-- 🛠️ **10 hard problems solved:** dual I2S bus management, PSRAM overflow (480KB buffers), WiFi audio crackle, ghost-voice distortion (22050→16kHz resample), INMP441 bit-shift tuning
-- ✅ **Phase 1:** 16/16 user stories · 10/10 critical bugs resolved
-- 🚧 **Phase 2 (mostly done):** ESP-NOW peer-to-peer ✅ · IoT smart-home control ✅ · Stereo mics ✅ · Wake-word & web dashboard pending
-
-`ESP32-S3` `Whisper` `Mistral 7B` `Ollama` `Flask` `I2S Audio` `PSRAM` `Offline LLM`
+`ESP32-S3` `MicroPython` `Faster-Whisper` `openWakeWord` `Mistral 7B` `Ollama` `FastAPI` `Piper` `ESP-NOW` `TinyML`
 
 ---
 
@@ -145,7 +143,7 @@ I'm actively looking for **remote AI/ML internships and full-time roles** in **E
 <p align="center">
   📧 <a href="mailto:aadilmangat@gmail.com">aadilmangat@gmail.com</a> &nbsp;•&nbsp;
   📧 <a href="mailto:armanadil2022@gmail.com">armanadil2022@gmail.com</a> &nbsp;•&nbsp;
-  🔗 <a href="https://www.linkedin.com/in/arman-adil-mangat-82221a253/">LinkedIn</a> &nbsp;•&nbsp;
+  🔗 <a href="https://www.linkedin.com/in/armanadilmangat/">LinkedIn</a> &nbsp;•&nbsp;
   🤗 <a href="https://huggingface.co/ArmanXAI">HuggingFace</a> &nbsp;•&nbsp;
   📍 Lahore, Pakistan
 </p>
