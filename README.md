@@ -116,8 +116,8 @@ Random Forest vs CNN, MLP and a CNN-LSTM hybrid on multi-class network flows, wi
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="assets/stats.svg" alt="GitHub stats"/>
-  <img height="165" src="assets/top-langs.svg" alt="Most used languages"/>
+  <img height="150" src="assets/stats.svg" alt="GitHub stats"/>
+  <img height="150" src="assets/top-langs.svg" alt="Most used languages"/>
 </p>
 
 <p align="center">

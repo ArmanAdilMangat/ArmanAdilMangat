@@ -66,11 +66,11 @@ def card(width, height, title, body):
 
 def stats_svg(s):
     rows = [("Public repositories", s["repos"]), ("Total stars", s["stars"]),
-            ("Commits (public, all time)", s["commits"]), ("Pull requests", s["prs"]), ("Issues", s["issues"])]
+            ("Commits (public, all time)", s["commits"]), ("Languages used", len(s["langs"]))]
     body = "".join('<circle cx="31" cy="%d" r="4" fill="%s"/><text x="45" y="%d" class="l">%s</text>'
                    '<text x="330" y="%d" class="v" text-anchor="end">%s</text>'
                    % (64 + i * 25, ICON, 69 + i * 25, escape(k), 69 + i * 25, v) for i, (k, v) in enumerate(rows))
-    return card(355, 195, "%s's GitHub Stats" % USER.replace("ArmanAdilMangat", "Arman Adil Mangat"), body)
+    return card(355, 170, "%s's GitHub Stats" % USER.replace("ArmanAdilMangat", "Arman Adil Mangat"), body)
 
 
 def langs_svg(langs):
