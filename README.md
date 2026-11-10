@@ -18,7 +18,7 @@
 - 🤖 Hybrid specialization: **NLP · Deep Learning · Embedded AI** — full stack, from fine-tuning BERT to wiring I2S microphones on ESP32-S3
 - 🧞 Led **[GENIE](https://github.com/ArmanAdilMangat/GENIE)** — an offline voice assistant and home-safety monitor on six ESP32-S3 nodes, built for accessibility & smart-environment IoT control
 - 🏆 Completed the **Advanced AI/ML Engineering Internship** at **DevelopersHub Corporation** — fine-tuned models hitting up to **99.82% accuracy**
-- 📄 Authored an independent research paper: **CNN-LSTM intrusion detection for IoT** (99.03% accuracy, CICIDS-2017)
+- 🛡️ Benchmarked intrusion detection on **CICIDS-2017** — Random Forest (99.93%) matched or beat CNN, MLP and CNN-LSTM
 - 🎯 **Open to remote AI/ML roles** across **Europe, Australia & New Zealand**
 - 📍 Based in **Lahore, Pakistan** 🇵🇰
 
@@ -100,16 +100,16 @@ Six ESP32-S3 nodes and one laptop. Wake word, speech recognition, intent routing
 Fine-tuned **BERT-base-uncased** on AG News (120K samples) using HuggingFace Trainer with fp16 mixed precision on RTX 4060.
 **→ 94.74% accuracy · 94.75 macro F1** · batch 16 · lr 2e-5 · 3 epochs
 
-#### 🎫 [LLM Support-Ticket Auto-Tagger](https://github.com/ArmanAdilMangat/DevelopersHub-AI-Internship-Advance-Tasks)
-Compared **zero-shot · few-shot · fine-tuned** LLM approaches for ticket classification.
-**→ 99.82% accuracy** with fine-tuned model · published reproducible comparison report
+#### 🎫 [Support-Ticket Auto-Tagger](https://github.com/ArmanAdilMangat/DevelopersHub-AI-Internship-Advance-Tasks)
+Compared **zero-shot (BART-MNLI) · few-shot (SetFit, 8/class) · fine-tuned (DistilBERT)** on 11 ticket classes, 550 test tickets.
+**→ 47.3% → 98.2% → 99.82% accuracy** · reproducible comparison report
 
 #### 📉 [Customer Churn ML Pipeline](https://github.com/ArmanAdilMangat/DevelopersHub-AI-Internship-Advance-Tasks)
 End-to-end churn prediction on IBM Telco (7K rows) with ColumnTransformer preprocessing + GridSearchCV (5-fold, F1) comparing Logistic Regression vs Random Forest.
 
-#### 🛡️ [CNN-LSTM Intrusion Detection for IoT](https://github.com/ArmanAdilMangat/Research-paper) &nbsp; `Independent Research`
-Hybrid CNN-LSTM with **NSGA-II Jumping-Gene** multi-objective feature selection on CICIDS-2017.
-**→ 99.03% accuracy · 5× faster training** vs MLP/CNN baselines
+#### 🛡️ [Intrusion Detection Benchmark — CICIDS-2017](https://github.com/ArmanAdilMangat/Research-paper) &nbsp; `Course Project`
+Random Forest vs CNN, MLP and a CNN-LSTM hybrid on multi-class network flows, with a documented limitations section.
+**→ Random Forest 99.93% · CNN 99.60% · CNN-LSTM 99.55%** — the classical baseline matched the deep models
 
 ---
 
